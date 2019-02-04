@@ -8,5 +8,6 @@ target 'FirebaseStorage' do
   # Pods for FirebaseStorage
 pod 'Firebase/Core'
 pod 'Firebase/Storage'
+pod 'Firebase/Auth'
 
 end

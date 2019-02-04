@@ -12,6 +12,7 @@
 		109CEF7322083DF6005F539A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109CEF7122083DF6005F539A /* Main.storyboard */; };
 		109CEF7522083E13005F539A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109CEF7422083E13005F539A /* Assets.xcassets */; };
 		109CEF7822083E13005F539A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 109CEF7622083E13005F539A /* LaunchScreen.storyboard */; };
+		109CEF8022083FCF005F539A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 109CEF7F22083FCF005F539A /* GoogleService-Info.plist */; };
 		AAAF702BB82609D3D676E121 /* Pods_FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CFD3D0E634958EC3DFDF3 /* Pods_FirebaseStorage.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		109CEF7422083E13005F539A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109CEF7722083E13005F539A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		109CEF7922083E14005F539A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		109CEF7F22083FCF005F539A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C62CFDC7AF9113994269EE15 /* Pods-FirebaseStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseStorage/Pods-FirebaseStorage.release.xcconfig"; sourceTree = "<group>"; };
 		E482D1DF6C3CD2BE4D7C2007 /* Pods-FirebaseStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseStorage/Pods-FirebaseStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		F61CFD3D0E634958EC3DFDF3 /* Pods_FirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 		109CEF6C22083DF5005F539A /* FirebaseStorage */ = {
 			isa = PBXGroup;
 			children = (
+				109CEF7F22083FCF005F539A /* GoogleService-Info.plist */,
 				109CEF6D22083DF5005F539A /* AppDelegate.swift */,
 				109CEF6F22083DF5005F539A /* ViewController.swift */,
 				109CEF7122083DF6005F539A /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109CEF8022083FCF005F539A /* GoogleService-Info.plist in Resources */,
 				109CEF7822083E13005F539A /* LaunchScreen.storyboard in Resources */,
 				109CEF7522083E13005F539A /* Assets.xcassets in Resources */,
 				109CEF7322083DF6005F539A /* Main.storyboard in Resources */,
@@ -371,7 +375,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirebaseStorage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SSKR.FirebaseStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -387,7 +394,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirebaseStorage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.SSKR.FirebaseStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
